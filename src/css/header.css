@@ -1,7 +1,13 @@
 /* Header Module */
 /* Mobile Screen (Portrait) Rules <576px */
 
-@media (max-width: 576px) {
+
+/* @media (max-width: 768px)  */
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 991px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
   .header {
     height: 4.5rem;
   }
@@ -30,7 +36,7 @@
 
 /* Large Screen Rules >= 992px */
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .header-wrapper {
     position: sticky;
     top: 0;
