@@ -5,7 +5,6 @@ import { CoverPic } from "../components/CoverPic";
 import { AmbientPics } from "../components/AmbientPics";
 import { RealWorld } from "../components/AmbientPics";
 import { FetchPics } from "../components/FetchPics";
-import { FetchUrls } from "../components/FetchUrls";
 
 export const HomePage = () => {
   // const { dataPics, layoutLg } = FetchPics;
@@ -30,7 +29,6 @@ export const HomePage = () => {
         </p>
       </div> */}
       <FetchPics searchTerm={'costa rica'}/>
-      <FetchUrls />
       <Outlet />
     </>
   );
