@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
 import { HeaderOne } from "../components/HeaderOne";
-import { CoverPic } from "../components/CoverPic";
+// import { CoverPic } from "../components/CoverPic";
 import { AmbientPics } from "../components/AmbientPics";
 import { RealWorld } from "../components/AmbientPics";
 import { FetchPics } from "../components/FetchPics";
