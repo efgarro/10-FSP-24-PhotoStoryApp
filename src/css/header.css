@@ -36,7 +36,7 @@
 
 /* Large Screen Rules >= 992px */
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .header-wrapper {
     position: sticky;
     top: 0;
