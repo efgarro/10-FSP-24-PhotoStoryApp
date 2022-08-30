@@ -8,6 +8,7 @@ import { JacoHerradura } from "../components/JacoHerradura";
 import { Monteverde } from "../components/Monteverde";
 import { LaFortuna } from "../components/LaFortuna";
 import { CahuitaPtoViejo } from "../components/CahuitaPtoViejo";
+import { ResourceList } from "../components/ResourceList";
 import "../css/app.css";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         </Route>
         <Route element={<HubPage />} >
           <Route path="nicoyastacruz" element={<NicoyaStaCruz />} />
+          <Route path="nicoyastacruz/:resourceId" element={<ResourceList />} />
           <Route path="jacoherradura" element={<JacoHerradura />} />
           <Route path="monteverde" element={<Monteverde />} />
           <Route path="lafortuna" element={<LaFortuna />} />

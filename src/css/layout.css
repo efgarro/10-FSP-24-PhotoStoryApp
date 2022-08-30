@@ -6,15 +6,6 @@
 /* Large Screen Rules >= 992px */
 
 @media (min-width: 992px) {
-  .layout-flexRow {
-    display: flex;
-    flex-direction: row;
-  }
-  .layout-flexCol {
-    display: flex;
-    flex-direction: column;
-  }
-  
   .layout-wrapper {
     /* background: #80b8be; */
     width: clamp(16rem, 85vw, 75rem);
@@ -24,5 +15,14 @@
     padding-right: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
     height: 100%;
   }
+  .layout-flexRow {
+    display: flex;
+    flex-direction: row;
+  }
+  .layout-flexCol {
+    display: flex;
+    flex-direction: column;
+  }
+  
 }
 

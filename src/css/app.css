@@ -15,6 +15,7 @@
 /*Components*/
 @import url(header.css);
 @import url(navbar.css);
+@import url(hubBoard.css);
 
 @import url(/node_modules/react-grid-layout/css/styles.css);
 @import url(/node_modules/react-resizable/css/styles.css);
