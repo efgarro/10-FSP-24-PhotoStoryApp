@@ -37,7 +37,7 @@
 /* Large Screen Rules >= 992px */
 
 @media (min-width: 992px) {
-  .header-wrapper {
+  .header-box {
     position: sticky;
     top: 0;
     z-index: 999;
@@ -47,14 +47,16 @@
     box-shadow: 0 3px 10px -4px rgb(128 183 190)
   }
 
-  .header-wrapper--row {
-    justify-content: space-between;
-    align-items: center;
+  .header-wrapper {
     width: clamp(16rem, 85vw, 75rem);
     margin-left: auto;
     margin-right: auto;
     padding-left: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
     padding-right: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
+  }
+  .header-flexRow {
+    justify-content: space-between;
+    align-items: center;
   }
 
   .header--logo {

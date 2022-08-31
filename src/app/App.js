@@ -15,19 +15,26 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomePage />} >
+        <Route path="/" element={<HomePage />}>
           <Route index element={<Home />} />
         </Route>
-        <Route element={<HubPage />} >
+        <Route element={<HubPage />}>
           <Route path="nicoyastacruz" element={<NicoyaStaCruz />} />
           <Route path="nicoyastacruz/:resourceId" element={<ResourceList />} />
           <Route path="jacoherradura" element={<JacoHerradura />} />
+          <Route path="jacoherradura/:resourceId" element={<ResourceList />} />
           <Route path="monteverde" element={<Monteverde />} />
+          <Route path="monteverde/:resourceId" element={<ResourceList />} />
           <Route path="lafortuna" element={<LaFortuna />} />
+          <Route path="lafortuna/:resourceId" element={<ResourceList />} />
           <Route path="cahuitaptoviejo" element={<CahuitaPtoViejo />} />
+          <Route
+            path="cahuitaptoviejo/:resourceId"
+            element={<ResourceList />}
+          />
         </Route>
-        <Route element={<ContactPage />} >
-          <Route path="/contact" element={<ContactForm/>} />
+        <Route element={<ContactPage />}>
+          <Route path="/contact" element={<ContactForm />} />
         </Route>
       </Routes>
     </BrowserRouter>

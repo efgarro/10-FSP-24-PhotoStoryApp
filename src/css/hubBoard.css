@@ -15,7 +15,7 @@
     /* box-shadow: 0 3px 10px -4px rgb(128 183 190); */
   }
 
-  .hubBoard-wrapper--row {
+  /* .hubBoard-wrapper--row {
     justify-content: space-between;
     align-items: center;
     width: clamp(16rem, 85vw, 75rem);
@@ -23,7 +23,7 @@
     margin-right: auto;
     padding-left: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
     padding-right: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
-  }
+  } */
 
   .hubBoard--title {
 

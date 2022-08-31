@@ -2,10 +2,12 @@
 
 /* Mobile Screen (Portrait) Rules <576px */
 
-
 /* Large Screen Rules >= 992px */
 
 @media (min-width: 992px) {
+  .layout-box {
+    width: 100%;
+  }
   .layout-wrapper {
     /* background: #80b8be; */
     width: clamp(16rem, 85vw, 75rem);
@@ -23,6 +25,4 @@
     display: flex;
     flex-direction: column;
   }
-  
 }
-
