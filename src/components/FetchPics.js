@@ -60,8 +60,9 @@ export const FetchPics = ( { searchTerm }) => {
 
   return (
     <>
+      {console.log('here first')}
       {console.log(dataPics)}
-      {console.log(layoutLg)}
+      {/* {console.log(layoutLg)} */}
       <AmbientPics dataPics={dataPics} layoutLg={layoutLg} />
     </>
   );

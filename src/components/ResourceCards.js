@@ -4,18 +4,18 @@ import { Responsive, WidthProvider } from "react-grid-layout";
 
 const ResponsiveGridLayout = WidthProvider(Responsive);
 
-export class AmbientPics extends React.Component {
+export class ResourceCards extends React.Component {
   render() {
     return (
       <div className="layout-wrapper">
-        {console.log('ambient pics lyot')}
+        {console.log('here goes layoutLg')}
         {console.log(this.props.layoutLg)}
         <ResponsiveGridLayout
           className="layout"
           layouts={this.props.layoutLg}
           rowHeight={63}
           cols={{ lg: 12, md: 10, sm: 6, xs: 4, xxs: 2 }}
-          breakpoints={{ lg: 992 /*, md: 996, sm: 768, xs: 480, xxs: 0 */}}
+          breakpoints={{ lg: 992 /*, md: 996, sm: 768, xs: 480, xxs: 0 */ }}
           // width={1200}
           isResizable={true}
           isDraggable={true}
@@ -23,11 +23,11 @@ export class AmbientPics extends React.Component {
           useCSSTransforms={false}
           compactType={"vertical"}
         >
-          {this.props.dataPics.map((photo) => {
+          {this.props.resourceList.map((item) => {
             return (
-              <div key={photo.id} className={"card_img"}>
+              <div key={item.id} className={"card_img"}>
                 <img
-                  src={photo.url}
+                  src={item.photo.url}
                   alt={
                     "Pic"
                   } /*className={ "card_img"photo.orientation === "lan" ? "card_imL" : "card_img" }*/

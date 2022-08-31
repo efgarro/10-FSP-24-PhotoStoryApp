@@ -13,11 +13,12 @@ const hubsDataSlice = createSlice({
     loadHikingList: (state) => {
       state.hiking = hubsData.hiking;
     },
-    loadWaterfallsList: (state) => {
-      state.waterfalls = hubsData.waterfalls;
-    },
+    // loadWaterfallsList: (state) => {
+    //   state.waterfalls = hubsData.waterfalls;
+    // },
   },
 });
 
-export const loadHikingList = (state) => state.hubsData.hiking;
+export const selectHikingList = (state) => state.hubsData.hiking;
+export const { loadHikingList } = hubsDataSlice.actions;
 export default hubsDataSlice.reducer;
