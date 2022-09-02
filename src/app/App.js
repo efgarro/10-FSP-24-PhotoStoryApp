@@ -20,16 +20,22 @@ function App() {
         </Route>
         <Route element={<HubPage />}>
           <Route path="nicoyastacruz" element={<NicoyaStaCruz />} />
-          <Route path="nicoyastacruz/:resourceId" element={<ResourceList />} />
+          <Route
+            path="nicoyastacruz/:resourceType"
+            element={<ResourceList hubName={"nicoyastacruz"} />}
+          />
           <Route path="jacoherradura" element={<JacoHerradura />} />
-          <Route path="jacoherradura/:resourceId" element={<ResourceList />} />
+          <Route
+            path="jacoherradura/:resourceType"
+            element={<ResourceList hubName={"jacoherradura"} />}
+          />
           <Route path="monteverde" element={<Monteverde />} />
-          <Route path="monteverde/:resourceId" element={<ResourceList />} />
+          <Route path="monteverde/:resourceType" element={<ResourceList />} />
           <Route path="lafortuna" element={<LaFortuna />} />
-          <Route path="lafortuna/:resourceId" element={<ResourceList />} />
+          <Route path="lafortuna/:resourceType" element={<ResourceList />} />
           <Route path="cahuitaptoviejo" element={<CahuitaPtoViejo />} />
           <Route
-            path="cahuitaptoviejo/:resourceId"
+            path="cahuitaptoviejo/:resourceType"
             element={<ResourceList />}
           />
         </Route>

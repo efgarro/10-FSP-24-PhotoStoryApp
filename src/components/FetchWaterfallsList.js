@@ -1,17 +1,17 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { selectHikingList, loadHikingList } from "../data/hubsDataSlice";
+import { selectWaterfallsList, loadWaterfallsList } from "../data/hubsDataSlice";
 import { ResourceCards } from "./ResourceCards";
 // import { generateLayoutLg } from "./generateLayoutLg";
 
-export const FetchHikingList = ( { resourceType }) => {
+export const FetchWaterfallsList = ( { resourceType }) => {
   const dispatch = useDispatch();
   const [layoutLg, setLayoutLg] = useState({});
-  const resourceList = useSelector(selectHikingList);
+  const resourceList = useSelector(selectWaterfallsList);
   
   useEffect(() => {
-    dispatch(loadHikingList());
+    dispatch(loadWaterfallsList());
   }, [dispatch]);
 
   useEffect(() => {

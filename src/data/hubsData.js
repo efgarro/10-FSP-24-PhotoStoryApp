@@ -111,4 +111,114 @@ export const hubsData = {
       },
     },
   ],
+  waterfalls: [
+    {
+      id: "wfl1",
+      name: "Catarata Río Celeste",
+      description:
+        "Located near and around the river's cannyon, it reaches dolor sit amet, consectetur adipiscing elit. Pellentesque nisl arcu, ullamcorper vitae efficitur id, facilisis et justo. Maecenas ut augue id nibh condimentum hendrerit. Duis lobortis imperdiet augue, sit amet pharetra elit pulvinar id. In finibus vehicula enim, a maximus augue viverra nec. Pellentesque interdum ultrices tortor id finibus. Praesent fringilla elit id arcu facilisis dignissim. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
+      height: "25m",
+      photo: {
+        id: "b4aac62d-fce7-4781-7b8c-e0f822849400",
+        url: "https://imagedelivery.net/KuVp-L0ue-dbspqdyuGkJw/b4aac62d-fce7-4781-7b8c-e0f822849400/regular",
+        orientation: "lan",
+      },
+    },
+    {
+      id: "wfl2",
+      name: "La Esperanza Waterfall",
+      description:
+        "Located near and around the entrance, it reaches Vestibulum consectetur tortor tellus, ut aliquet justo euismod id. In vitae leo orci. Etiam eu leo scelerisque, suscipit turpis eu, sodales ante. Aliquam pellentesque lectus vel pretium faucibus. Pellentesque fringilla ullamcorper gravida. Aenean euismod leo velit, ut pulvinar dolor commodo vel. Donec in consectetur quam, ut gravida nisl. Etiam maximus iaculis lorem tincidunt imperdiet. Vestibulum convallis diam ac enim elementum volutpat. Cras sapien neque, tincidunt ac velit.",
+      height: "18m",
+      photo: {
+        id: "3e964807-18c8-4998-1299-3a8abb207100",
+        url: "https://imagedelivery.net/KuVp-L0ue-dbspqdyuGkJw/3e964807-18c8-4998-1299-3a8abb207100/regular",
+        orientation: "por",
+      },
+    },
+    {
+      id: "wfl3",
+      name: "Deep Forest Flare Creek",
+      description:
+        "Integer consectetur mattis ultricies. Etiam at enim vel nisl cursus maximus et et nulla. Cras pulvinar egestas leo nec commodo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce vehicula, nulla vel semper laoreet, odio arcu sodales tellus, quis rutrum tellus ipsum at est. Fusce pulvinar risus arcu, vel auctor arcu semper sed. Sed non euismod dolor, vitae vulputate libero. Integer sagittis nisi id finibus lobortis. Mauris sit amet luctus leo. Curabitur suscipit suscipit lacus.",
+      height: "8m",
+      photo: {
+        id: "a40a188b-efe0-4c93-4b74-b14a0fcc8600",
+        url: "https://imagedelivery.net/KuVp-L0ue-dbspqdyuGkJw/a40a188b-efe0-4c93-4b74-b14a0fcc8600/regular",
+        orientation: "por",
+      },
+    },
+    {
+      id: "wfl4",
+      name: "Fila Verde",
+      description:
+        "Nunc et ante fermentum, rhoncus orci vitae, aliquam diam. Mauris vitae aliquam ante. Aliquam erat volutpat. Morbi scelerisque maximus augue, sit amet placerat nunc fermentum at. Nunc consequat ante eros, a ornare ipsum viverra ut. Aliquam erat volutpat. Nulla finibus quam orci, sed luctus lectus venenatis ut. Quisque sed feugiat turpis. Etiam in enim est. Phasellus orci dui, luctus sit amet interdum vitae, commodo et velit. Sed porttitor ullamcorper felis non semper. Sed a iaculis lorem. Vestibulum ante ipsum primis.",
+      height: "8m",
+      photo: {
+        id: "3e316723-9187-4e31-be34-4902ab684900",
+        url: "https://imagedelivery.net/KuVp-L0ue-dbspqdyuGkJw/3e316723-9187-4e31-be34-4902ab684900/regular",
+        orientation: "lan",
+      },
+    },
+    {
+      id: "wfl5",
+      name: "Bajos de la Esperanza",
+      description:
+        "Suspendisse potenti. Aliquam at lacus blandit, sagittis purus ut, mattis felis. Fusce sollicitudin consequat bibendum. Phasellus non nunc consequat, elementum elit in, imperdiet ante. Ut in enim ligula. Vestibulum id metus vitae tortor pharetra aliquam ut quis ante. Donec nibh arcu, tristique vitae fermentum eget, placerat a augue. Praesent fermentum ultrices augue a bibendum.",
+      height: "48m",
+      photo: {
+        id: "b267e46a-231c-48ca-d0b5-5918514e4700",
+        url: "https://imagedelivery.net/KuVp-L0ue-dbspqdyuGkJw/b267e46a-231c-48ca-d0b5-5918514e4700/regular",
+        orientation: "por",
+      },
+    },
+    {
+      id: "wfl6",
+      name: "Catarata Bijagualito",
+      description:
+        "Nunc tempus dolor et malesuada tristique. Praesent eu porttitor ex. Duis porttitor pulvinar auctor. Etiam interdum est orci, quis eleifend massa porta finibus. Morbi nec lacinia turpis, ac porta lectus. Aliquam rhoncus ullamcorper orci ut luctus. Nulla malesuada diam eget sapien laoreet, nec aliquam mauris porta. Suspendisse justo leo, posuere a odio nec, imperdiet fermentum elit. Phasellus accumsan, est vel mollis placerat, nulla mi hendrerit nisl, ac eleifend lectus lectus et diam. Aliquam turpis neque, aliquet ut nibh non, tincidunt.",
+      height: "80m",
+      photo: {
+        id: "6e429f67-37f9-4c7a-5bc2-9c45828eb300",
+        url: "https://imagedelivery.net/KuVp-L0ue-dbspqdyuGkJw/6e429f67-37f9-4c7a-5bc2-9c45828eb300/regular",
+        orientation: "por",
+      },
+    },
+    {
+      id: "wfl7",
+      name: "Cruce de los Monos",
+      description:
+        "Phasellus pretium bibendum odio quis elementum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec luctus, nisl eget lacinia convallis, lectus turpis iaculis orci, at dictum eros quam sit amet mauris. Proin imperdiet viverra metus in mattis. Suspendisse eu ante hendrerit, varius ante in, molestie mi. Morbi porta est a euismod vulputate. Suspendisse convallis rhoncus pellentesque. Sed id massa non odio auctor imperdiet. Nam hendrerit massa in faucibus tristique. In euismod in tellus quis faucibus.",
+      height: "4m",
+      photo: {
+        id: "8336e788-57a7-42e7-6c61-780252442000",
+        url: "https://imagedelivery.net/KuVp-L0ue-dbspqdyuGkJw/8336e788-57a7-42e7-6c61-780252442000/regular",
+        orientation: "lan",
+      },
+    },
+    {
+      id: "wfl8",
+      name: "Deep Rain Waterfall",
+      description:
+        "Aenean augue nisi, scelerisque et volutpat non, commodo vitae magna. Donec libero libero, finibus ac nulla sit amet, vestibulum rutrum ligula. Ut faucibus sollicitudin elit, vel volutpat magna ornare vitae. Aenean ultricies fermentum enim in consequat. Vestibulum at tortor iaculis, sodales ex sit amet, efficitur massa. Nulla pulvinar rutrum metus id ultrices. Praesent id turpis eros. Mauris sit amet quam ultricies, dictum elit nec, egestas arcu. Etiam rhoncus libero eu erat lacinia blandit. Nullam lacinia velit elit, a dictum nunc.",
+      height: "50m",
+      photo: {
+        id: "1505e7f5-dae8-44e2-ce69-4be50d5fd900",
+        url: "https://imagedelivery.net/KuVp-L0ue-dbspqdyuGkJw/1505e7f5-dae8-44e2-ce69-4be50d5fd900/regular",
+        orientation: "por",
+      },
+    },
+    {
+      id: "wfl9",
+      name: "Cañón de la Trampa",
+      description:
+        "Aenean laoreet hendrerit finibus. Nunc quam lacus, faucibus vel consequat eu, convallis quis erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi consequat nisi est, sed lobortis massa tristique ac. Donec dignissim mollis neque a rutrum. Quisque consequat tempus arcu, at condimentum velit. Ut sem nunc, feugiat ac sollicitudin blandit, venenatis vitae tortor. Aenean consectetur, dui malesuada lacinia porta, ligula leo efficitur sapien, vel pharetra velit nulla vitae ligula.",
+      height: "12m",
+      photo: {
+        id: "038075a6-2137-4af0-4284-72f0230af700",
+        url: "https://imagedelivery.net/KuVp-L0ue-dbspqdyuGkJw/038075a6-2137-4af0-4284-72f0230af700/regular",
+        orientation: "lan",
+      },
+    },
+  ],
 };
