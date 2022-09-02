@@ -9,6 +9,7 @@ export const JacoHerradura = () => {
     dispatch(setCurrentHubTitle("Jacó / Herradura"));
     dispatch(setCurrentHubName("jacoherradura"));
   }, [dispatch]);
+  
   return (
     <>
       <FetchPics searchTerm={"jaco"} />

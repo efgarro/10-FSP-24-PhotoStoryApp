@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
-import { link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setCurrentHubTitle, setCurrentHubName } from "../data/hubsDataSlice";
 import { FetchHikingList } from "./FetchHikingList";
 import { FetchWaterfallsList } from "./FetchWaterfallsList";
+import { FetchRestaurantsList } from "./FetchRestaurantsList";
 
 export const ResourceList = ({ hubName }) => {
   const { resourceType } = useParams();
@@ -17,22 +18,27 @@ export const ResourceList = ({ hubName }) => {
       dispatch(setCurrentHubTitle("Jacó / Herradura"));
       dispatch(setCurrentHubName(hubName));
     }
+    if (hubName === "monteverde") {
+      dispatch(setCurrentHubTitle("Monteverde"));
+      dispatch(setCurrentHubName(hubName));
+    }
+    if (hubName === "lafortuna") {
+      dispatch(setCurrentHubTitle("La Fortuna"));
+      dispatch(setCurrentHubName(hubName));
+    }
+    if (hubName === "cahuitaptoviejo") {
+      dispatch(setCurrentHubTitle("Cahuita / Puerto Viejo"));
+      dispatch(setCurrentHubName(hubName));
+    }
   }, [dispatch]);
 
   if (resourceType === "hiking") {
-    return (
-      <>
-        <div>ResourceList {resourceType} </div>
-        <FetchHikingList resourceType={resourceType} />
-      </>
-    );
+    return <FetchHikingList />;
   }
   if (resourceType === "waterfalls") {
-    return (
-      <>
-        <div>ResourceList {resourceType} </div>
-        <FetchWaterfallsList resourceType={resourceType} />
-      </>
-    );
+    return <FetchWaterfallsList />;
+  }
+  if (resourceType === "restaurants") {
+    return <FetchRestaurantsList />;
   }
 };

@@ -24,13 +24,13 @@ export const HubResourceBoard = () => {
                 <NavLink to={`/${currentHubName}/waterfalls`}>Waterfalls</NavLink>
               </li>
               <li>
-                <NavLink to="/monteverde/lodging">Lodging</NavLink>
+                <NavLink to={`/${currentHubName}/lodging`}>Lodging</NavLink>
               </li>
               <li>
-                <NavLink to="/lafortuna/restaurants">Restaurants</NavLink>
+                <NavLink to={`/${currentHubName}/restaurants`}>Restaurants</NavLink>
               </li>
               <li>
-                <NavLink to="/cahuitaptoviejo/tours">Tours</NavLink>
+                <NavLink to={`/${currentHubName}/tours`}>Tours</NavLink>
               </li>
             </ul>
           </nav>

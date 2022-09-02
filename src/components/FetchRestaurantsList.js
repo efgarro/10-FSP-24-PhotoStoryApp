@@ -2,18 +2,18 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
-  selectWaterfallsList,
-  loadWaterfallsList,
+  selectRestaurantsList,
+  loadRestaurantsList,
 } from "../data/hubsDataSlice";
 import { ResourceCards } from "./ResourceCards";
 
-export const FetchWaterfallsList = ({ resourceType }) => {
+export const FetchRestaurantsList = ({ resourceType }) => {
   const dispatch = useDispatch();
   const [layoutLg, setLayoutLg] = useState({});
-  const resourceList = useSelector(selectWaterfallsList);
+  const resourceList = useSelector(selectRestaurantsList);
 
   useEffect(() => {
-    dispatch(loadWaterfallsList());
+    dispatch(loadRestaurantsList());
   }, [dispatch]);
 
   useEffect(() => {
