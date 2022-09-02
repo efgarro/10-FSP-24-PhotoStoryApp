@@ -32,7 +32,7 @@ export const ResourceList = ({ hubName }) => {
       dispatch(setCurrentHubTitle("Cahuita / Puerto Viejo"));
       dispatch(setCurrentHubName(hubName));
     }
-  }, [dispatch]);
+  }, [dispatch, hubName]);
 
   if (resourceType === "hiking") {
     return <FetchHikingList />;

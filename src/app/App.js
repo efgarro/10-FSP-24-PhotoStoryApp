@@ -30,13 +30,19 @@ function App() {
             element={<ResourceList hubName={"jacoherradura"} />}
           />
           <Route path="monteverde" element={<Monteverde />} />
-          <Route path="monteverde/:resourceType" element={<ResourceList />} />
+          <Route
+            path="monteverde/:resourceType"
+            element={<ResourceList hubName={"monteverde"} />}
+          />
           <Route path="lafortuna" element={<LaFortuna />} />
-          <Route path="lafortuna/:resourceType" element={<ResourceList />} />
+          <Route
+            path="lafortuna/:resourceType"
+            element={<ResourceList hubName={"lafortuna"} />}
+          />
           <Route path="cahuitaptoviejo" element={<CahuitaPtoViejo />} />
           <Route
             path="cahuitaptoviejo/:resourceType"
-            element={<ResourceList />}
+            element={<ResourceList hubName={"cahuitaptoviejo"} />}
           />
         </Route>
         <Route element={<ContactPage />}>

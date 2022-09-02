@@ -15,9 +15,8 @@ export class AmbientPics extends React.Component {
           rowHeight={63}
           cols={{ lg: 12, md: 10, sm: 6, xs: 4, xxs: 2 }}
           breakpoints={{ lg: 992 /*, md: 996, sm: 768, xs: 480, xxs: 0 */ }}
-          // width={1200}
-          isResizable={true}
-          isDraggable={true}
+          isResizable={false}
+          // isDraggable={false}
           margin={[25, 25]}
           useCSSTransforms={false}
           compactType={"vertical"}
