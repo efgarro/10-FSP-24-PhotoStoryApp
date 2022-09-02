@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { selectHikingList, loadHikingList } from "../data/hubsDataSlice";
 import { ResourceCards } from "./ResourceCards";
 
-export const FetchHikingList = () => {
+export const FetchHikingList = ({ resourceType }) => {
   const dispatch = useDispatch();
   const [layoutLg, setLayoutLg] = useState({});
   const resourceList = useSelector(selectHikingList);
@@ -20,7 +20,7 @@ export const FetchHikingList = () => {
           x: ((index + 3) % 3) * 4,
           y: 0,
           w: 4,
-          h: item.photo.orientation === "lan" ? 3 : 5,
+          h: item.photo.orientation === "lan" ? 5 : 8.5,
           i: item.id,
         };
       });

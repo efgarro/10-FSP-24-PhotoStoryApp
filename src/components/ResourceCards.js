@@ -7,8 +7,6 @@ export class ResourceCards extends React.Component {
   render() {
     return (
       <div className="layout-wrapper">
-        {console.log("here goes layoutLg")}
-        {console.log(this.props.layoutLg)}
         <ResponsiveGridLayout
           className="layout"
           layouts={this.props.layoutLg}
@@ -23,8 +21,16 @@ export class ResourceCards extends React.Component {
         >
           {this.props.resourceList.map((item) => {
             return (
-              <div key={item.id} className={"card_img"}>
+              <div
+                key={item.id}
+                className={`${
+                  item.photo.orientation === "lan" ? "card-lan" : "card-por"
+                } card`}
+              >
                 <img src={item.photo.url} alt={"Pic"} />
+                <h4 className="card--title">{item.name}</h4>
+                <p className="card--description">
+                {`${item.description.substring(0, 150)}...`} </p>
               </div>
             );
           })}
