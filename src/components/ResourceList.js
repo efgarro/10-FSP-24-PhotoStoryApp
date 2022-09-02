@@ -4,7 +4,9 @@ import { useDispatch } from "react-redux";
 import { setCurrentHubTitle, setCurrentHubName } from "../data/hubsDataSlice";
 import { FetchHikingList } from "./FetchHikingList";
 import { FetchWaterfallsList } from "./FetchWaterfallsList";
+import { FetchLodgingList } from "./FetchLodgingList";
 import { FetchRestaurantsList } from "./FetchRestaurantsList";
+import { FetchToursList } from "./FetchToursList";
 
 export const ResourceList = ({ hubName }) => {
   const { resourceType } = useParams();
@@ -38,7 +40,13 @@ export const ResourceList = ({ hubName }) => {
   if (resourceType === "waterfalls") {
     return <FetchWaterfallsList />;
   }
+  if (resourceType === "lodging") {
+    return <FetchLodgingList />;
+  }
   if (resourceType === "restaurants") {
     return <FetchRestaurantsList />;
+  }
+  if (resourceType === "tours") {
+    return <FetchToursList />;
   }
 };
