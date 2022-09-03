@@ -7,8 +7,6 @@ export const SearchPage = () => {
   const { searchTerm } = useParams();
   return (
     <>
-      {console.log('Here in SearchPage')}
-      {console.log(searchTerm)}
       <HeaderOne />
       <FetchPics searchTerm={searchTerm} />
     </>

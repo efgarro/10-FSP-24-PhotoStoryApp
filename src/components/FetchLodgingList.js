@@ -9,7 +9,7 @@ import { ResourceCards } from "./ResourceCards";
 
 export const FetchLodgingList = ({ resourceType }) => {
   const dispatch = useDispatch();
-  const [layoutLg, setLayoutLg] = useState({});
+  const [layout, setLayout] = useState({});
   const resourceList = useSelector(selectLodgingList);
 
   useEffect(() => {
@@ -27,14 +27,29 @@ export const FetchLodgingList = ({ resourceType }) => {
           i: item.id,
         };
       });
-    }; // endof generateLayout
-    setLayoutLg({ lg: generateLayoutLg() });
+    }; // endof generateLayoutLg
+
+    const generateLayoutSm = () => {
+      return resourceList.map((item, index) => {
+        return {
+          x: ((index + 2) % 2) * 3,
+          y: 0,
+          w: 3,
+          h: item.photo.orientation === "lan" ? 5 : 8.5,
+          i: item.id,
+        };
+      });
+    }; // endof generateLayoutSm
+    setLayout({
+      lg: generateLayoutLg(resourceList),
+      sm: generateLayoutSm(resourceList),
+    });
   }, [resourceList]);
 
   if (resourceList.length > 0) {
     return (
       <>
-        <ResourceCards resourceList={resourceList} layoutLg={layoutLg} />
+        <ResourceCards resourceList={resourceList} layout={layout} />
       </>
     );
   }

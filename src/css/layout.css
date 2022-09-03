@@ -2,6 +2,29 @@
 
 /* Mobile Screen (Portrait) Rules <576px */
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 991px) and (-webkit-min-device-pixel-ratio: 1) {
+  .layout-box {
+    width: 100%;
+  }
+  .layout-wrapper {
+    /* background: #80b8be; */
+    width: clamp(16rem, 85vw, 75rem);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
+    padding-right: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
+    height: 100%;
+  }
+  .layout-flexRow {
+    display: flex;
+    flex-direction: row;
+  }
+  .layout-flexCol {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 /* Large Screen Rules >= 992px */
 
 @media (min-width: 992px) {

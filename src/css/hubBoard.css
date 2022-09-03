@@ -1,8 +1,14 @@
 @media only screen and (min-device-width: 768px) and (max-device-width: 991px) and (-webkit-min-device-pixel-ratio: 1) {
-  .hubBoard {
+  .hubBoard-box {
     width: 100%;
-    height: 15rem;
-    margin: 15px;
+    background: rgb(215, 234, 231);
+  }
+
+  .hubBoard--title {
+    padding: 1.15rem;
+    font-family: var(--ff-subheading);
+    font-weight: 700;
+    text-align: center;
   }
 }
 /* Large Screen Rules >= 992px */
@@ -10,27 +16,13 @@
 @media (min-width: 992px) {
   .hubBoard-box {
     width: 100%;
-    /* height: 15rem; */
     background: rgb(215, 234, 231);
-    /* box-shadow: 0 3px 10px -4px rgb(128 183 190); */
   }
 
-  /* .hubBoard-wrapper--row {
-    justify-content: space-between;
-    align-items: center;
-    width: clamp(16rem, 85vw, 75rem);
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
-    padding-right: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
-  } */
-
   .hubBoard--title {
-
     padding: 1.15rem;
     font-family: var(--ff-subheading);
     font-weight: 700;
     text-align: center;
   }
-
 }

@@ -7,13 +7,12 @@ export class AmbientPics extends React.Component {
   render() {
     return (
       <div className="layout-wrapper">
-        {console.log("ambient pics lyot")}
         <ResponsiveGridLayout
           className="layout"
-          layouts={this.props.layoutLg}
+          layouts={this.props.layout}
           rowHeight={63}
-          cols={{ lg: 12, md: 10, sm: 6, xs: 4, xxs: 2 }}
-          breakpoints={{ lg: 992 /*, md: 996, sm: 768, xs: 480, xxs: 0 */ }}
+          cols={{ lg: 12, sm: 6 }}
+          breakpoints={{ lg: 768, sm: 480 }}
           isResizable={false}
           // isDraggable={false}
           margin={[25, 25]}
@@ -22,7 +21,7 @@ export class AmbientPics extends React.Component {
         >
           {this.props.dataPics.map((photo) => {
             return (
-              <div key={photo.id} className={"card_img"}>
+              <div key={photo.id} className={"card--img"}>
                 <img src={photo.url} alt={"Pic"} />
               </div>
             );

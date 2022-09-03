@@ -9,10 +9,13 @@ export class ResourceCards extends React.Component {
       <div className="layout-wrapper">
         <ResponsiveGridLayout
           className="layout"
-          layouts={this.props.layoutLg}
+          layouts={this.props.layout}
           rowHeight={63}
-          cols={{ lg: 12, md: 10, sm: 6, xs: 4, xxs: 2 }}
-          breakpoints={{ lg: 992 /*, md: 996, sm: 768, xs: 480, xxs: 0 */ }}
+          cols={{ lg: 12, sm: 6 }}
+          breakpoints={{
+            lg: 768,
+            sm: 480 ,
+          }}
           isResizable={false}
           // isDraggable={false}
           margin={[25, 25]}
@@ -30,7 +33,8 @@ export class ResourceCards extends React.Component {
                 <img src={item.photo.url} alt={"Pic"} />
                 <h4 className="card--title">{item.name}</h4>
                 <p className="card--description">
-                {`${item.description.substring(0, 150)}...`} </p>
+                  {`${item.description.substring(0, 150)}...`}{" "}
+                </p>
               </div>
             );
           })}

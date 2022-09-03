@@ -3,10 +3,9 @@ import { AmbientPics } from "./AmbientPics";
 
 export const FetchPics = ({ searchTerm }) => {
   const [dataPics, setDataPics] = useState([]);
-  const [layoutLg, setLayoutLg] = useState({});
+  const [layout, setLayout] = useState({});
 
   useEffect(() => {
-    console.log("call useEffect in FetchData");
     const fetchData = async () => {
       const client_Id = "tjz5KRnEe72zmhz3LUh1FRHZtn8rPcV2gyxP6vW8S1U";
       try {
@@ -59,13 +58,28 @@ export const FetchPics = ({ searchTerm }) => {
           i: item.id,
         };
       });
-    }; // endof generateLayout
-    setLayoutLg({ lg: generateLayoutLg() });
+    }; // endof generateLayoutLg
+
+    const generateLayoutSm = () => {
+      return dataPics.map((item, index) => {
+        return {
+          x: ((index + 2) % 2) * 3,
+          y: 0,
+          w: 3,
+          h: item.orientation === "lan" ? 3 : 5,
+          i: item.id,
+        };
+      });
+    }; // endof generateLayoutSm
+    setLayout({
+      lg: generateLayoutLg(),
+      sm: generateLayoutSm(),
+    });
   }, [dataPics]);
 
   return (
     <>
-      <AmbientPics dataPics={dataPics} layoutLg={layoutLg} />
+      <AmbientPics dataPics={dataPics} layout={layout} />
     </>
   );
 }; // endof FetchPics

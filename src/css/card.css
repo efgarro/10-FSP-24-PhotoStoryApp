@@ -1,0 +1,31 @@
+
+.card {
+    font-family: var(--ff-subheading);
+    font-weight: 400;
+    /* aspect-ratio: 1 / 2; */
+}
+.card--img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card--title {
+  background: rgb(211 211 211 / 0.55);
+  padding: 0.85rem;
+  font-weight: 700;
+  text-align: center;
+}
+.card--description {
+  background: rgb(211 211 211 / 0.25);
+  padding: 1.15rem;
+}
+.card-lan img {
+  width: 100%;
+  aspect-ratio: 1.5 / 1;
+  object-fit: cover;
+}
+.card-por img {
+  width: 100%;
+  aspect-ratio: 1 / 1.5;
+  object-fit: cover;
+}
