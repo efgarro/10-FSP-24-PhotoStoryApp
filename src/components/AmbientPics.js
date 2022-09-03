@@ -8,7 +8,6 @@ export class AmbientPics extends React.Component {
     return (
       <div className="layout-wrapper">
         {console.log("ambient pics lyot")}
-        {console.log(this.props.layoutLg)}
         <ResponsiveGridLayout
           className="layout"
           layouts={this.props.layoutLg}

@@ -46,7 +46,7 @@ export const FetchPics = ({ searchTerm }) => {
       }
     }; //endof fetchData
     fetchData();
-  }, []); //endof useEffect to fetchData
+  }, [searchTerm]); //endof useEffect to fetchData
 
   useEffect(() => {
     const generateLayoutLg = () => {

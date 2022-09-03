@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export const SearchForm = () => {
-  const history = useNavigate();
-  const handleSubmit = (e, history, searchInput) => {
+  const navigateTo = useNavigate();
+  const handleSubmit = (e, searchInput) => {
     e.preventDefault();
     e.currentTarget.reset();
-    let url = `/search/${searchInput}`;
-    history.push(url);
+    navigateTo(`/search/${searchInput}`);
+  
   };
 
   const [searchEntry, setSearchEntry] = useState("");
@@ -19,7 +19,7 @@ export const SearchForm = () => {
     <div /* className="header-wrapper--row" */>
       <form
         className="header--searchForm"
-        onSubmit={(e) => handleSubmit(e, history, searchEntry)}
+        onSubmit={(e) => handleSubmit(e, searchEntry)}
       >
         <input
           type="text"
